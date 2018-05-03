@@ -76,5 +76,5 @@ def stuff():
 	data=fix_html(url)
 	data=htmlmin.minify(str(data))
 	return data
-
-app.run()    
+if __name__=="__main__":
+	app.run()    
