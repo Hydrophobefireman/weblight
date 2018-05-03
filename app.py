@@ -12,7 +12,7 @@ CUSTOM_STYLE = """body{margin:0;word-wrap:break-word}img{max-width:100%}[style*=
 
 
 def fix_html(url):
-	soup = bs(requests.get(url).text, "html.parser")
+	soup = bs(requests.get(url,headers={'User-Agent':"Mozilla/5.0"}).text, "html.parser")
 	style = soup.style
 	try:
 		style.clear()
