@@ -1,6 +1,6 @@
-htmlmin==0.1.12
 requests==2.18.4
 Flask==0.10.1
 Pillow==5.1.0
 beautifulsoup4==4.6.0
 gunicorn==19.8.1
+django-htmlmin==0.10.0
